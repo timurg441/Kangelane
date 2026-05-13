@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-// ============================================================
-// KLASS 1: Kangelane (baasklass)
-// ============================================================
+// klass 1 Kangelane (baasklass)
 class Kangelane
 {
     // Privaatsed isendiväljad
@@ -62,9 +60,7 @@ class Kangelane
     }
 }
 
-// ============================================================
-// KLASS 2: SuperKangelane (pärib Kangelane)
-// ============================================================
+// klass 2: SuperKangelane (pärib Kangelane)
 class SuperKangelane : Kangelane
 {
     // Lisaomadus: osavus vahemikus [1.0, 5.0)
@@ -121,9 +117,7 @@ class SuperKangelane : Kangelane
     }
 }
 
-// ============================================================
-// KLASS 3: Program
-// ============================================================
+// klass 3: Program
 class Program
 {
     // Staatiline list kõigi kangelaste hoidmiseks
@@ -164,7 +158,7 @@ class Program
         Console.WriteLine("   KANGELASTE AGENTUURI INFOSUSTEEM");
         Console.WriteLine("==========================================\n");
 
-        // SAMM 1: Loe kangelased failist
+        // samm 1 Loe kangelased failist
         LoeKangelasedFailist("andmed.txt");
 
         // Kuva kõik kangelased loeteluna
@@ -173,7 +167,7 @@ class Program
             Console.WriteLine("  - " + k.ToString());
         Console.WriteLine();
 
-        // SAMM 2: Vali vähemalt üks tavakangelane ja üks superkangelane
+        // samm 2 Vali vähemalt üks tavakangelane ja üks superkangelane
         Kangelane tavakangelane = null;
         SuperKangelane superkangelane = null;
 
@@ -187,7 +181,7 @@ class Program
 
         int ohus = 1000;
 
-        // SAMM 3 & 4: Kutsu meetodid ja kuva info — TAVAKANGELANE
+        // samm 3 ja 4 Kutsu meetodid ja kuva info — TAVAKANGELANE
         Console.WriteLine("==========================================");
         Console.WriteLine("TAVAKANGELANE:");
         Console.WriteLine("==========================================");
@@ -198,7 +192,7 @@ class Program
         Console.WriteLine("Paasta(" + ohus + ")  : " + tavakangelane.Paasta(ohus) + " inimest paasteti");
         Console.WriteLine();
 
-        // SAMM 3 & 4: Kutsu meetodid ja kuva info — SUPERKANGELANE
+        // samm 3 ja 4 Kutsu meetodid ja kuva info — SUPERKANGELANE
         Console.WriteLine("==========================================");
         Console.WriteLine("SUPERKANGELANE:");
         Console.WriteLine("==========================================");
@@ -209,7 +203,7 @@ class Program
         Console.WriteLine("Paasta(" + ohus + ")  : " + superkangelane.Paasta(ohus) + " inimest paasteti");
         Console.WriteLine();
 
-        // LISAKS: Kogustatistika kõigi kangelaste kohta
+        // Kogustatistika kõigi kangelaste kohta
         Console.WriteLine("==========================================");
         Console.WriteLine("KOGU AGENTUURI STATISTIKA:");
         Console.WriteLine("==========================================");
